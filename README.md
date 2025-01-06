@@ -45,7 +45,7 @@ This repository is my playground for learning and growing as a developer. It’s
 ## **Structure of the Repository**
 The repository is organized into folders based on the technologies and tools I’m practicing. Here’s a quick overview:
 
-
+```
 Study_Projects/
 ├── React/
 │   ├── project-1/
@@ -67,6 +67,7 @@ Study_Projects/
 │   ├── project-1/
 │   ├── project-2/
 │   └── ...
+```
 
 
 ## How I’ll Use This Repository
