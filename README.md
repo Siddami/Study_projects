@@ -30,7 +30,6 @@ Welcome to the **Study_Projects** repository! 🎉 This is a dedicated space whe
 - Building performant and SEO-friendly React applications.
 - Experimenting with API routes, middleware, and advanced routing.
 
----
 
 ## **Goals for This Repository**
 - Track and document all my learning progress.
@@ -38,7 +37,6 @@ Welcome to the **Study_Projects** repository! 🎉 This is a dedicated space whe
 - Sharpen problem-solving abilities by tackling coding challenges and real-world scenarios.
 - Experiment with new libraries, frameworks, and tools to stay up-to-date with industry trends.
 
----
 
 ## **Why Study_Projects?**
 This repository is my playground for learning and growing as a developer. It’s a space to make mistakes, iterate, and ultimately become more confident in my abilities. Each project represents a step forward in my journey, and I’m excited to share it as a record of my progress.
@@ -69,21 +67,17 @@ Study_Projects/
 │   ├── project-1/
 │   ├── project-2/
 │   └── ...
-```
 
----
 
 ## How I’ll Use This Repository
 - Commit regularly to track progress and ensure consistent learning.
 - Write detailed documentation for each project or exercise to reinforce understanding.
 - Continuously refactor and improve code to practice best practices and clean coding principles.
 
----
 
 ### Let’s Connect
 If you find this repository useful or have suggestions for improvement, feel free to reach out or leave feedback! 😊
 
-```
 Email: [dharmmy621@gmail.com]  
 LinkedIn: [https://www.linkedin.com/in/Siddiqat]  
 
