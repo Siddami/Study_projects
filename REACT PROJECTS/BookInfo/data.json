@@ -1,0 +1,38 @@
+[
+    {
+      "title": "The Gifts of Imperfection",
+      "author": "Brené Brown",
+      "description": "This book explores the power of embracing our imperfections and letting go of the pressure to be perfect. Brené Brown teaches us to cultivate courage, compassion, and connection.",
+      "date": "2010-08-24",
+      "imageUrl": "/images/image1.jpeg"
+    },
+    {
+      "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+      "author": "Robert C. Martin",
+      "description": "Clean Code offers practical advice for writing software that is easy to understand and maintain. Robert C. Martin explains how to improve your code's readability, design, and testing.",
+      "date": "2008-08-11",
+      "imageUrl": "/images/image2.jpeg"
+    },
+    {
+      "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+      "author": "James Clear",
+      "description": "Atomic Habits delves into the science behind habit formation and offers strategies for making small, incremental changes to build good habits and break bad ones.",
+      "date": "2018-10-16",
+      "imageUrl": "/images/image3.jpeg"
+    },
+    {
+      "title": "The Pragmatic Programmer: Your Journey to Mastery",
+      "author": "David Thomas, Andy Hunt",
+      "description": "A classic for software developers, this book provides practical advice for becoming a better programmer. It includes tips for writing clean code, improving your problem-solving skills, and mastering your craft.",
+      "date": "1999-10-20",
+      "imageUrl": "/images/image4.jpeg"
+    },
+    {
+      "title": "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses",
+      "author": "Eric Ries",
+      "description": "The Lean Startup introduces a methodology for creating startups that emphasizes testing, iteration, and customer feedback. It's a guide for entrepreneurs looking to build successful businesses with minimal risk.",
+      "date": "2011-09-13",
+      "imageUrl": "/images/image5.jpg"
+    }
+  ]
+  
