@@ -27,7 +27,7 @@ In this mini project, I created two functional components in React to practice t
 - The book information is displayed in a responsive card layout, which stacks vertically on smaller screens and aligns horizontally on larger screens. This ensures that the app is accessible and functional across all devices, from mobile phones to desktop screens.
 
 ### Work ScreenShot
-![Screenshot](/book-info.png)
+![Screenshot](/BookInfo/book-info.png)
 
 ### Conclusion:
 This mini project was a great exercise in learning and applying React props, while also improving my understanding of how to make components reusable and responsive. Using Tailwind CSS made styling easier, and the use of functional components helped keep the code clean and manageable.
