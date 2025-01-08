@@ -4,7 +4,7 @@ export const Card = ({title, author, decription, date, imageUrl}) => {
   return (
     <div className='card-container'>
         <img src={imageUrl} alt={title} />
-        <div>
+        <div className='book-details'>
             <h1>{title}</h1>
             <p>{author}</p>
             <p>{date}</p>
