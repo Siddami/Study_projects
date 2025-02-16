@@ -77,4 +77,5 @@ function resetScore() {
     guestScore = 0
     scoreGuest.textContent = guestScore;
     scoreHome.textContent = homeScore;
+    leader.textContent = 'Leader: '
 }
