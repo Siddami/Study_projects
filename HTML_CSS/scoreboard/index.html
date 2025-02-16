@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Scoring board</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="leader">Leader: </h2>
+        <div class="scores-container">
+            <div class="board-container">
+                <h3>HOME</h3>
+                <div class="score-box">
+                    <p id="home-score" class="score">0</p>
+                </div>
+                <div class="btn-container">
+                    <span id="home-plus-one" class="plus-btns" onclick=addOneHome()>+1</span>
+                    <span id="home-plus-two" class="plus-btns" onclick=addTwoHome()>+2</span>
+                    <span id="home-plus-three" class="plus-btns" onclick=addThreeHome()>+3</span>
+                </div>
+            </div>
+            <div class="board-container">
+                <h3>GUEST</h3>
+                <div class="score-box">
+                    <p id="guest-score" class="score">0</p>
+                </div>
+                <div class="btn-container">
+                    <span id="guest-plus-one" class="plus-btns" onclick=addOneGuest()>+1</span>
+                    <span id="guest-plus-two" class="plus-btns" onclick=addTwoGuest()>+2</span>
+                    <span id="guest-plus-three" class="plus-btns" onclick=addThreeGuest()>+3</span>
+                </div>
+            </div>
+        </div>
+        <button id="rest_scores" onclick=resetScore()>Start Over</button>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
