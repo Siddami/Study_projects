@@ -2,7 +2,7 @@
 
 A customizable password generator that creates secure passwords based on user preferences (symbols, numbers, etc.). Built with HTML, CSS, and JavaScript.
 
-![Demo Screenshot](./assets/demo.png) *(Optional: Add a screenshot)*
+![Demo Screenshot](demo.png)
 
 ## Features
 
