@@ -27,15 +27,22 @@
     </div>
     <div id="game-container">
         <h1>Blackjack</h1>
-        <p id="message-el">Want to play a round?</p>
-        <p id="cards-el">Cards:</p>
-        <p id="sum-el">Sum:</p>
-        <button onclick="startGame()">START GAME</button>
-        <button onclick="newCard()">NEW CARD</button>
-        <p id="player-el"></p>
-        <button class="music-toggle" onclick="player.toggleMusic()">
+
+        <div class="info">
+            <p id="message-el">Want to play a round?</p>
+            <p id="cards-el">Cards:</p>
+            <p id="sum-el">Sum:</p>
+        </div>
+        <div class="game-btns">
+            <button onclick="startGame()">START GAME</button>
+            <button onclick="newCard()">NEW CARD</button>
+        </div>
+        <div class="other-info">
+            <p id="player-el"></p>
+            <button class="music-toggle" onclick="toggleMusic()">
             🔊 Music On
             </button>
+        </div>
     </div>
     <audio id="bgMusic" loop>
         <source src="./blackjack.mp3" type="audio/mpeg">
