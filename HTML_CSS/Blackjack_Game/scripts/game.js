@@ -1,15 +1,24 @@
 // Audio elements and music control
-let bgMusic = document.getElementById("bgMusic");
-let musicOn = localStorage.getItem('musicEnabled') === 'true';
+let bgMusic;
+let musicOn;
 
 // Initialize music
 function initMusic() {
+    bgMusic = document.getElementById("bgMusic");
+    musicOn = localStorage.getItem('musicEnabled') !== 'false';
+
+    // Restore playback position
+    const savedTime = parseFloat(localStorage.getItem('musicCurrentTime')) || 0;
+    bgMusic.currentTime = savedTime;
+    bgMusic.volume = 0.3;
+
     if (musicOn) {
-        const savedTime = parseFloat(localStorage.getItem('musicCurrentTime')) || 0;
-        bgMusic.currentTime = savedTime;
-        bgMusic.volume = 0.3;
-        bgMusic.play().catch(e => console.log("Music playback error:", e));
+        bgMusic.play().catch(e => {
+            console.log("Autoplay blocked - need user interaction");
+            updateMusicButton();
+        });
     }
+    updateMusicButton();
 }
 
 // Toggle music function
@@ -17,13 +26,18 @@ function toggleMusic() {
     musicOn = !musicOn;
     localStorage.setItem('musicEnabled', musicOn);
 
-    const toggleBtn = document.querySelector('.music-toggle');
     if (musicOn) {
         bgMusic.play();
-        if (toggleBtn) toggleBtn.textContent = "🔊 Music On";
     } else {
         bgMusic.pause();
-        if (toggleBtn) toggleBtn.textContent = "🔇 Music Off";
+    }
+    updateMusicButton();
+}
+
+function updateMusicButton() {
+    const toggleBtn = document.querySelector('.music-toggle');
+    if (toggleBtn) {
+        toggleBtn.textContent = musicOn ? "🔊 Music On" : "🔇 Music Off";
     }
 }
 
@@ -104,15 +118,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const startGameBtn = document.getElementById('start-game-btn');
     const playerNameInput = document.getElementById('player-name');
     const gameContainer = document.getElementById('game-container');
-    const musicToggleBtn = document.querySelector('.music-toggle');
 
     // Initialize music
     initMusic();
 
     // Update music toggle button state
-    if (musicToggleBtn) {
-        musicToggleBtn.textContent = musicOn ? "🔊 Music On" : "🔇 Music Off";
-    }
+    updateMusicButton();
+
 
     // Handle chip selection
     chipOptions.forEach(option => {
