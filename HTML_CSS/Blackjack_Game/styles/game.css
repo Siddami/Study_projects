@@ -8,16 +8,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
-/* Modal Styles */
+
 .modal {
-  display: flex;
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -28,7 +31,7 @@ body {
   padding: 2rem;
   border-radius: 10px;
   width: 90%;
-  max-width: 900px;
+  max-width: 550px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   border: 2px solid #d4af37;
   color: white;
@@ -99,33 +102,70 @@ body {
 }
 
 #game-container {
+  z-index: 1;
+  position: relative;
   background: rgba(0, 0, 0, 0.7);
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  max-width: 500px;
+  max-width: 550px;
   width: 100%;
-  height: 80%;
+  min-height: 400px;
   display: none;
 }
 
 h1 {
   color: goldenrod;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 #message-el {
   font-style: italic;
 }
 
+.game-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 button {
   color: rgb(35, 141, 97);
   width: 150px;
   background: goldenrod;
-  padding-top: 5px;
-  padding-bottom: 5px;
   font-weight: bold;
   border: none;
   border-radius: 2px;
-  margin-bottom: 2px;
-  margin-top: 2px;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  transition: all 0.2s;
+}
+
+button:focus,
+#player-name:focus {
+  outline: 2px solid goldenrod;
+  outline-offset: 2px;
+}
+
+button,
+.chip-option,
+.modal-content {
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .modal-content,
+  #game-container {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  button {
+    width: 100%;
+  }
 }
