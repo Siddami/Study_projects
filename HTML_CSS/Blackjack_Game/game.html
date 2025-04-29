@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles/game.css">
+</head>
+
+<body>
+    <div id="player-setup-modal">
+        <div class="modal-content">
+            <h2>Welcome to Blackjack!</h2>
+            <div class="form-group">
+                <label for="player-name">Your Name:</label>
+                <input type="text" id="player-name" placeholder="Enter your name" value="Player">
+            </div>
+
+            <div class="form-group">
+                <label>Starting Chips:</label>
+                <div class="chip-options">
+                    <button class="chip-option" data-amount="100">$100 (Beginner)</button>
+                    <button class="chip-option" data-amount="200">$200 (Regular)</button>
+                    <button class="chip-option" data-amount="500">$500 (High Roller)</button>
+                </div>
+            </div>
+
+            <button id="start-game-btn">DEAL CARDS</button>
+        </div>
+    </div>
+    <div id="game-container">
+        <h1>Blackjack</h1>
+
+        <div class="info">
+            <p id="message-el">Want to play a round?</p>
+            <p id="cards-el">Cards:</p>
+            <p id="sum-el">Sum:</p>
+        </div>
+        <div class="game-btns">
+            <button onclick="startGame()">START GAME</button>
+            <button onclick="newCard()">NEW CARD</button>
+        </div>
+        <div class="other-info">
+            <p id="player-el"></p>
+            <button class="music-toggle" onclick="toggleMusic()">
+            🔊 Music On
+            </button>
+        </div>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="./blackjack.mp3" type="audio/mpeg">
+    </audio>
+    <script src="/scripts/game.js"></script>
+</body>
+
+</html>

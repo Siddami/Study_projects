@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="text">
+            <h1>Generate a <span class="green">random password</span></h1>
+            <p>Never use an insecure password again.</p>
+        </div>
+
+
+        <div class="password-sec">
+            <button class="btn" onclick="GenerateRandomPassword()">Generate Passwords</button>
+
+            <img src="/linespace.svg" alt="line spacing" class="linespace">
+
+            <div class="btn-container">
+                <p id="passwordOne" class="password"></p>
+                <p id="passwordTwo" class="password"></p>
+            </div>
+        </div>
+
+        <div class="options">
+            <label>
+                <input type="checkbox" id="includeSymbols" checked> Include Symbols
+            </label>
+            <label>
+                <input type="checkbox" id="includeNumbers" checked> Include Numbers
+            </label>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
