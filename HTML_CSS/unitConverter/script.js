@@ -22,11 +22,11 @@ function convert(value, fromUnit, toUnit){
     return null;
   }
 
-  const forwardResult = value * forwardRate;
-  const reverseResult = value * reverseRate;
-
   if (!forwardRate && reverseRate) forwardRate = 1 / reverseRate;
   if (!reverseRate && forwardRate) reverseRate = 1 / forwardRate;
+
+    const forwardResult = value * forwardRate;
+    const reverseResult = value * reverseRate;
 
   return `${value} ${fromUnit}= ${forwardResult.toFixed(2)} ${toUnit} | ${value} ${toUnit} = ${reverseResult.toFixed(2)} ${fromUnit}`;
 }
