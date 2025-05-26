@@ -5,7 +5,7 @@ import {
   push,
   onValue,
   remove,
-} from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+} from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
 
 const firebaseConfig = {
   databaseURL: "https://leads-generator-app-e355f-default-rtdb.firebaseio.com/",
