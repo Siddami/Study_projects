@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Oldagram",
+  "version": "1.0",
+  "description": "A simple Instagram client for viewing posts without an account.",
+  "icons": {
+    "16": "images/logo.png",
+    "48": "images/logo.png",
+    "128": "images/logo.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "images/logo.png",
+      "48": "images/logo.png",
+      "128": "images/logo.png"
+    }
+  }
+}
