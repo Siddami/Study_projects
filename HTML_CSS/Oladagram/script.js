@@ -49,9 +49,9 @@ function renderPosts() {
               <img src=${post.post} alt="post-vangogh" class="post-image">
               <div>
                   <ul class="social-icons">
-                     <li><img src="images/icon-heart.png" alt="heart icon" class="icons"></li>
-                     <li><img src="images/icon-comment.png" alt="comment icon" class="icons" ></li>
-                     <li><img src="images/icon-dm.png" alt="dm icon" class="icons"></li>
+                     <li><img src="images/icon-heart.png" alt="heart icon" class="icons" id="like"></li>
+                     <li><img src="images/icon-comment.png" alt="comment icon" class="icons" id="comment></li>
+                     <li><img src="images/icon-dm.png" alt="dm icon" class="icons" id="share></li>
                   </ul>
                   <p class="likes">${post.likes} likes</p>
                   <p class="comment"><span class="username">${post.username}</span> ${post.comment}</p>
