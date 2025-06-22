@@ -24,3 +24,5 @@ This is a mini frontend project of an instagram clone, where i practice my css s
 
  you can view the porject live on [https://oldagramsid.netlify.app/]
 
+# Screenshot
+[images/oldagram.png]
