@@ -7,7 +7,7 @@
 header{
     background-color: #f8f9fa;
     padding: 10px 0;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 2px solid #dee2e6;
 }
 
 .container{
@@ -15,7 +15,8 @@ header{
     align-items: center;
     margin: 0 auto;
     justify-content: space-between;
-    width: 550px;
+    max-width: 550px;
+    width: 100%;
 }
 
 .logo{
@@ -31,12 +32,52 @@ header{
     margin-right: 20px;
 }
 
+.flex{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.info-flex{
+    flex-direction: column;
+}
+
+.info-author{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #343a40;
+}
+
+.post-image{
+    width: 550px
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.icons{
+    width: 30px;
+}
+
+.likes, .username{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.likes, .comments{
+    padding: 10px 0;
+}
+
 @media screen and (max-width: 600px) {
     .logo{
         width: 50px;
     }
     
-    .container{
-        width: 375px;
+    .container, .post-image{
+        max-width: 375px;
     }
 }
