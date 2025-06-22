@@ -50,8 +50,8 @@ function renderPosts() {
               <div>
                   <ul class="social-icons">
                      <li><img src="images/icon-heart.png" alt="heart icon" class="icons" id="like"></li>
-                     <li><img src="images/icon-comment.png" alt="comment icon" class="icons" id="comment></li>
-                     <li><img src="images/icon-dm.png" alt="dm icon" class="icons" id="share></li>
+                     <li><img src="images/icon-comment.png" alt="comment icon" class="icons" id="comment"></li>
+                     <li><img src="images/icon-dm.png" alt="dm icon" class="icons" id="share"></li>
                   </ul>
                   <p class="likes">${post.likes} likes</p>
                   <p class="comment"><span class="username">${post.username}</span> ${post.comment}</p>
@@ -64,3 +64,48 @@ function renderPosts() {
 }
 
 renderPosts()
+
+
+function likePost(event) {
+  const postElement = event.target.closest('.post');
+  if (postElement) {
+    const likesElement = postElement.querySelector('.likes');
+    let likesCount = parseInt(likesElement.textContent.split(' ')[0]);
+    likesCount++;
+    likesElement.textContent = `${likesCount} likes`;
+  }
+}
+document.addEventListener('click', function(event) {
+  if (event.target.id === 'like') {
+    likePost(event);
+  }
+});
+
+function commentPost(event) {
+  const postElement = event.target.closest('.post');
+  if (postElement) {
+    const commentElement = postElement.querySelector('.comment');
+    const username = postElement.querySelector('.username').textContent;
+    const newComment = prompt("Enter your comment:");
+    if (newComment) {
+      commentElement.innerHTML += `<br><span class="username">${username}</span> ${newComment}`;
+    }
+  }
+}
+document.addEventListener('click', function(event) {
+  if (event.target.id === 'comment') {
+    commentPost(event);
+  }
+});
+
+function sharePost(event) {
+  const postElement = event.target.closest('.post');
+  if (postElement) {
+    console.log("Post shared!");
+  }
+}
+document.addEventListener('click', function(event) {
+  if (event.target.id === 'share') {
+    sharePost(event);
+  }
+});
